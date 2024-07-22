@@ -1,0 +1,19 @@
+.categories-sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.categories-sidebar h2 {
+    margin-top: 0;
+}
+
+.categories-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories-sidebar ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}

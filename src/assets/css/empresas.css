@@ -1,0 +1,139 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.navbar-logo {
+  position: absolute;
+  left: 20px; /* Ajusta este valor según necesites */
+}
+
+.navbar-logo img {
+  height: 60px; /* Ajusta el tamaño del logo */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar-icons {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 20px; /* Ajusta este valor según necesites */
+}
+
+.navbar-icons .icon {
+  margin-left: 20px;
+}
+
+.navbar-icons .icon a {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navbar-icons .icon a:hover{
+  color: #349999;
+  box-shadow: #093F51;
+}
+
+h1 {
+  text-align: center;
+}
+
+.company-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* src/components/CompanyCard.css */
+
+.company-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  width: 300px; /* Fija el ancho de las tarjetas */
+  min-height: 200px; /* Fija la altura mínima de las tarjetas */
+}
+
+.company-card:hover {
+  transform: translateY(-5px);
+}
+
+.company-logo {
+  max-width: 80%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 10px; 
+  max-height: 150px; /* Fija una altura máxima para las imágenes */
+}
+
+.company-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.company-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+  flex: 1; /* Asegura que la descripción ocupe el espacio disponible */
+}
+
+.company-location {
+  font-size: 14px;
+  color: #999;
+}
+
+.company-button {
+  padding: 10px 20px;
+  background-color: #093F51;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.company-button:hover {
+  background-color: #349999;
+}
