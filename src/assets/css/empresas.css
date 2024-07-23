@@ -9,11 +9,13 @@ body {
   background-color: transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
+  justify-content: space-between;
 }
 
 .navbar-logo {
   position: absolute;
   left: 20px; /* Ajusta este valor según necesites */
+  flex: 1;
 }
 
 .navbar-logo img {
@@ -25,6 +27,8 @@ body {
   display: flex;
   margin: 0 auto;
   padding: 0;
+  flex: 2;
+  justify-content: center;
 }
 
 .navbar-links li {
@@ -136,4 +140,99 @@ h1 {
 
 .company-button:hover {
   background-color: #349999;
+}
+
+.nav-toggle {
+  color: black;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+}
+
+/* Media Query for Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar-links,
+  .navbar-icons {
+    display: none;
+  }
+
+  .navbar-icons {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 15px;
+    position: absolute;
+    right: 11%; /* Ajusta este valor según necesites */
+  }
+  .nav-toggle {
+    display: block;
+    margin-left: 91%;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    text-align: center;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .navbar-icons {
+    margin-top: 10px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .navbar-links,
+  .navbar-icons {
+    display: none;
+  }
+
+  .navbar-icons {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 15px;
+    position: absolute;
+    right: 15%; /* Ajusta este valor según necesites */
+  }
+  .nav-toggle {
+    display: block;
+    margin-left: 88%;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    text-align: center;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .navbar-icons {
+    margin-top: 10px;
+  }
+
 }
