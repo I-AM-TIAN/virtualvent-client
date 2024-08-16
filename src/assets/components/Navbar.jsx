@@ -21,7 +21,7 @@ function Navbar({ logo }) {
           
           <ul className={`navbar-links ${menuOpen ? 'active' : ''}`}>
             <li><a href="/">Inicio</a></li>
-            <li><a href="#about">Nosotros</a></li>
+            <li><a href="/nosotros">Nosotros</a></li>
             <li><a href="#contact">Tiendas</a></li>
           </ul>
           

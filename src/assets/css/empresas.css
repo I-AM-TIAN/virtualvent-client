@@ -42,7 +42,8 @@ body {
 }
 
 .navbar-links a:hover {
-  text-decoration: underline;
+  color: #349999;
+  box-shadow: #093F51;
 }
 
 .navbar-icons {
